@@ -3,15 +3,15 @@ using System.Diagnostics;
 
 class Calculadora
 {
-    private int x;
+    private double x;
 
-    public int X { get => x; set => x = value;}
+    public double X { get => x; set => x = value;}
 
-    public Calculadora(int num){X = num;}
+    public Calculadora(double num){X = num;}
 
-    public void Suma(int num){X += num;}
-    public void Resta(int num){X -= num;}
-    public void Multp(int num){X *= num;}
-    public void Div(int num){X = (num != 0)? X/=num : X = 0;}
+    public void Suma(double num){X += num;}
+    public void Resta(double num){X -= num;}
+    public void Multp(double num){X *= num;}
+    public void Div(double num){X = (num != 0)? X/=num : X = 0;}
     public void Limpiar(){X = 0;}
 }
